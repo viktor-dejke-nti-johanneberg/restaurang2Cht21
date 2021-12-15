@@ -27,6 +27,21 @@ body{
   margin: 1rem;
   display: grid;
   width: 100vw;
+  height: 190vh;
+  grid-template-areas: 
+  'hdnv'
+  'mn'
+  'ft';
+  grid-template-rows: 260px 3fr 1fr;
+  row-gap: 1.5rem;
+  background-color: rgba(51, 51, 51, 0.534);
+  padding: 2rem;
+}
+
+#container3{
+  margin: 1rem;
+  display: grid;
+  width: 100vw;
   height: 180vh;
   grid-template-areas: 
   'hdnv'
@@ -38,7 +53,7 @@ body{
   padding: 2rem;
 }
 
-#hdnv{
+.hdnv{
   padding: 0%;
   margin: 0%;
   display: grid;
@@ -50,7 +65,7 @@ body{
   border: rgb(0, 0, 0) 1px solid;
 }
 
-#header{
+.header{
   grid-area: hd;
   background-color: rgb(37, 37, 37);
   margin: 0%;
@@ -61,7 +76,7 @@ body{
   font-size: 17px;
 }
 
-#nav{
+.nav{
   grid-area: nv;
   display: flex;
   padding: 0%;
@@ -174,6 +189,60 @@ a{
   'sec2';
   grid-template-rows: 2fr 3fr;
   row-gap: 2rem;
+}
+
+#main2{
+  grid-area: mn;
+  display: flex;
+  flex-flow: column;
+  grid-template-areas: 
+  'sec1'
+  'sec2'
+  'sec3';
+  row-gap: 2rem;
+}
+
+.h3meny{
+  text-align: center;
+  margin: 0%;
+  font-size: 25px;
+  font-family: 'Roboto mono';
+  text-decoration: underline;
+}
+
+#food{
+  grid-area: sec1;
+  margin-top: 4rem;
+  background-color: rgb(230, 230, 230);
+  padding: 20px;
+  border-radius: 3px;
+}
+
+#drinks{
+  grid-area: sec2;
+  background-color: rgb(230, 230, 230);
+  padding: 20px;
+  border-radius: 3px;
+}
+
+#desserts{
+  grid-area: sec3;
+  background-color: rgb(230, 230, 230);
+  padding: 20px;
+  border-radius: 3px;
+}
+
+#main3{
+  grid-area: mn;
+  display: flex;
+  flex-flow: column;
+  grid-template-areas: 
+  'sec1'
+  'sec2'
+  'sec3';
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  row-gap: 1rem;
 }
 
 #sec1{
@@ -293,6 +362,10 @@ li{
   margin-top: 4px;
 }
 
+#anstallda:hover{
+  color: rgb(199, 199, 199);
+}
+
 #map{
   grid-area: map;
   background-color: rgb(31, 31, 31);
@@ -323,4 +396,64 @@ li{
 
 .li{
   margin: 20px;
+}
+
+.ulmeny{
+  font-size: large;
+  font-family: 'Roboto mono';
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.staffstuf{
+  width: 20rem;
+}
+
+#chef{
+  grid-area: sec1;
+  background-color: tomato;
+  grid-template-areas: 'im1 p1';
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+}
+
+#staff{
+  grid-area: sec2;
+  background-color: turquoise;
+  grid-template-areas: 'p2 im2';
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+}
+
+#owner{
+  grid-area: sec3;
+  background-color: yellow;
+  grid-template-areas: 'im3 p3';
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+}
+
+#bi1{
+  grid-area: im1;
+}
+
+#bi2{
+  grid-area: im2;
+}
+
+#bi3{
+  grid-area: im3;
+}
+
+#p1{
+  grid-area: p1;
+}
+
+#p2{
+  grid-area: p2;
+}
+
+#p3{
+  grid-area: p3;
 }
